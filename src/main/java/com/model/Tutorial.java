@@ -3,7 +3,7 @@ package com.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="tutorial")
+@Table(name="Tutorial")
 public class Tutorial {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -12,6 +12,6 @@ public class Tutorial {
     private String name;
     @Column(name= "description")
     private String description;
-    @Column(name = "done")
-    private boolean done;
+    @Column(name = "date")
+    private int date;
 }
