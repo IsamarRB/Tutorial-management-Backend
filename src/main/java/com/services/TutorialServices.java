@@ -20,5 +20,12 @@ public class TutorialServices {
         return iTutorialRepository.save(tutorial);
     }
 
-
+    public String deleteTutorial(int id) {
+      try {
+          iTutorialRepository.deleteById(id);
+          return "Has eliminated " + id;
+    } catch (Exception ignored){
+          return  "There is no such Tutorial.";
+      }
+   }
 }
