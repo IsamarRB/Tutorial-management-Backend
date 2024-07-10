@@ -12,5 +12,8 @@ public class TutorialController {
     @Autowired
     TutorialServices tutorialService;
 
-
+    @PutMapping(path = "/tutorials/{id}")
+    public void updateTutorial(@RequestBody Tutorial tutorial, @PathVariable int id) {
+        tutorialService.updateTutorial(tutorial, id);
+    }
 }

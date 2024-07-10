@@ -1,6 +1,7 @@
 package com.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,6 +11,7 @@ import lombok.Setter;
 @Entity
 @Table(name="Tutorial")
 @NoArgsConstructor
+@AllArgsConstructor
 
 public class Tutorial {
     @Id
