@@ -12,4 +12,8 @@ public class TutorialController {
     @Autowired
     TutorialServices tutorialService;
 
+    @DeleteMapping(path = "/Tutorial/{id}")
+    public String deleteTutorial(@PathVariable int id) {
+        return tutorialService.deleteTutorial(id);
+    }
 }
