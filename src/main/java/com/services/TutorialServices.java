@@ -21,11 +21,15 @@ public class TutorialServices {
     }
 
     public String deleteTutorial(int id) {
-      try {
-          iTutorialRepository.deleteById(id);
-          return "Has eliminated " + id;
-    } catch (Exception ignored){
-          return  "There is no such Tutorial.";
-      }
-   }
+        try {
+            if (iTutorialRepository.existsById(id)) {
+                iTutorialRepository.deleteById(id);
+                return "You have deleted the tutorial with ID: " + id;
+            } else {
+                return "The tutorial with ID: " + id + " does not exist.";
+            }
+        } catch (Exception e) {
+            return "An error occurred while trying to delete the tutorial with ID: " + id;
+        }
+    }
 }
