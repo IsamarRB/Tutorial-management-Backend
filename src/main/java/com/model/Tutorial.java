@@ -9,8 +9,11 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name="Tutorial")
+<<<<<<< HEAD
 @NoArgsConstructor
 
+=======
+>>>>>>> ad3344f919289c5a9671ac32a23eb0a7ef75f88e
 public class Tutorial {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
