@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 @Service
 
@@ -28,4 +29,8 @@ public class TutorialServices {
           return  "There is no such Tutorial.";
       }
    }
+    public void updateTutorial(Tutorial tutorial, int id) {
+        tutorial.setId(id);
+        iTutorialRepository.save(tutorial);
+    }
 }
