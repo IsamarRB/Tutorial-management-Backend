@@ -15,4 +15,4 @@ of the system include:
 3. Removing tutorials from the database.
 4. Editing an existing tutorial.
 
-![pseudocode image](https://github.com/IsamarRB/Tutorial-management-CRUD-Backend/commit/77df52f77c2319127fd1216c9a1875c09ca2a913#diff-06a3d7ee49f1628d3a268041e663df1efd7ddfca4b1facb3c52c65233ccbdd18)
+![pseudocode image](https://github.com/IsamarRB/Tutorial-management-CRUD-Backend/commit/ef49a9465e909c5360fff7114e1c855a7e965900#diff-dbf1da3ffd6e62b0ca24b7977ecf61c88303aeca025d5031dfc578fb10203f7d)

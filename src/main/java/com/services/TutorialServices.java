@@ -4,15 +4,16 @@ import com.Repository.ITutorialRepository;
 import com.model.Tutorial;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.ArrayList;
 
 @Service
+
 public class TutorialServices {
 
-    @Autowired
-    private ITutorialRepository tutorialRepository;
+        @Autowired
+        ITutorialRepository iTutorialRepository;
 
-    public Tutorial createTutorial(Tutorial newTutorial) {
-        Tutorial save = tutorialRepository.save(newTutorial);
-        return save;
+        public ArrayList<Tutorial> getAllTutorial() {
+            return (ArrayList<Tutorial>) iTutorialRepository.findAll();
+        }
     }
-}
