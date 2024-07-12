@@ -1,7 +1,10 @@
 package com.controller;
 import com.model.Tutorial;
 import com.services.TutorialServices;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 
 
 @RestController
@@ -27,9 +30,9 @@ public class TutorialController {
         return tutorialService.getAllTutorial();
     }
 
-    @GetMapping(path = "/wellcome")
+    @GetMapping(path = "/welcome")
     public String sayHello() {
-        return "Wellcome to our tutorial";
+        return "Welcome to our tutorial";
     }
 
 }
