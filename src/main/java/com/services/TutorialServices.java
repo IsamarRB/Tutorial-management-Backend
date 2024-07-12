@@ -20,6 +20,11 @@ public class TutorialServices {
     public Tutorial createTutorial (Tutorial tutorial){
         return iTutorialRepository.save(tutorial);
     }
+    public void updateTutorial(Tutorial tutorial, int id) {
+        tutorial.setId(id);
+        iTutorialRepository.save(tutorial);
+    }
+
 
     public String deleteTutorial(int id) {
         try {
